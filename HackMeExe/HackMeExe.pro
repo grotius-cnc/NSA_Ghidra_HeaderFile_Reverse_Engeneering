@@ -14,12 +14,14 @@ SOURCES += \
 
 HEADERS += \
     HackMeRE.h \
+    dsLibrary.h \
     mainwindow.h
 
 FORMS += \
     mainwindow.ui
 
-LIBS+= -L/home/user/build-HackMe-Desktop-Debug -lHackMe
+LIBS+= -L/home/user/build-HackMe-Desktop-Debug/ -lHackMe
+LIBS+= -L/home/user/HackMeDs/ -ldsLibrary
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
