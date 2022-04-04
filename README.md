@@ -46,7 +46,8 @@ https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/release
         By using Ghidra we where able to create a new header file for the .so library.
         
         In the qt gui app `HackMeExe` we included our new header file : 
-        https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/blob/main/HackMeExe/dsLibrary.h
+        
+https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/blob/main/HackMeExe/dsLibrary.h
         
         The output in terminal :
 
