@@ -36,5 +36,19 @@ The example is as follows :
         
         
         
+Excersize_0 : https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/releases/tag/1.0.0
+
+        This excersize is a showing how to reverse engineer a DraftSight library and create a .h header for it.
+        Luckely we had a full directory of API header files attached with the .deb archive. This was used as cheetsheet.
+        
+        By using Ghidra we where able to create a new header file for the .so library.
+        
+        
+
+
+
+
+
+        
         
         
