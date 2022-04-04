@@ -40,7 +40,7 @@ DISTNAME      = HackMeExe1.0.0
 DISTDIR = /home/user/build-HackMeExe-Desktop-Debug/.tmp/HackMeExe1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/opt/qt-creator/5.15.1/gcc_64/lib
-LIBS          = $(SUBLIBS) -L/home/user/build-HackMe-Desktop-Debug -lHackMe /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Widgets.so /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Gui.so /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Core.so -lGL -lpthread   
+LIBS          = $(SUBLIBS) -L/home/user/build-HackMe-Desktop-Debug/ -lHackMe -L/home/user/HackMeDs/ -ldsLibrary /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Widgets.so /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Gui.so /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Core.so -lGL -lpthread   
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -235,6 +235,7 @@ DIST          = /opt/qt-creator/5.15.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/qt-creator/5.15.1/gcc_64/mkspecs/features/yacc.prf \
 		/opt/qt-creator/5.15.1/gcc_64/mkspecs/features/lex.prf \
 		../HackMeExe/HackMeExe.pro ../HackMeExe/HackMeRE.h \
+		../HackMeExe/dsLibrary.h \
 		../HackMeExe/mainwindow.h ../HackMeExe/main.cpp \
 		../HackMeExe/mainwindow.cpp
 QMAKE_TARGET  = HackMeExe
@@ -620,7 +621,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/qt-creator/5.15.1/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../HackMeExe/HackMeRE.h ../HackMeExe/mainwindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../HackMeExe/HackMeRE.h ../HackMeExe/dsLibrary.h ../HackMeExe/mainwindow.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../HackMeExe/main.cpp ../HackMeExe/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../HackMeExe/mainwindow.ui $(DISTDIR)/
 
@@ -1032,7 +1033,8 @@ mainwindow.o: ../HackMeExe/mainwindow.cpp ../HackMeExe/mainwindow.h \
 		/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QStatusBar \
 		/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstatusbar.h \
 		/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QWidget \
-		../HackMeExe/HackMeRE.h
+		../HackMeExe/HackMeRE.h \
+		../HackMeExe/dsLibrary.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../HackMeExe/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
