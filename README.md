@@ -1,5 +1,5 @@
 # NSA_Ghidra_HeaderFile_Reverse_Engeneering
-HowTo reverse engeneer a c++ header file
+HowTo reverse engineer a c++ header file
 
 The purpose of this material is to show how to reverse engeneer a .h header file in c/c++ if you don't have one.
 This is a tiny concept of proof.
@@ -7,7 +7,7 @@ This is a tiny concept of proof.
 Most of the time commercial software is shipped only with the .so library file. To use the .so library file yourself, you 
 have to create a .h header file yourself.
 
-This repository gives a tiny example how to access .so libaray value's when the header file of the library is not provided, lost etc.
+This repository gives a tiny example how to access .so library value's when the header file of the library is not provided, lost etc.
 
 The example is as follows :
 
