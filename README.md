@@ -43,12 +43,15 @@ Excersize_0 : https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engen
         
         By using Ghidra we where able to create a new header file for the .so library.
         
+        In the qt gui app `HackMeExe` we included our new header file : 
+        https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/blob/main/HackMeExe/dsLibrary.h
         
+        The output in terminal :
 
-
-
-
-
+        string 1 size:9
+        string 2 size:16
+        String 1:0
+        String 2:1 💯
         
         
         
