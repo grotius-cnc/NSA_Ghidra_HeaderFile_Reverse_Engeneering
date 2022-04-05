@@ -65,6 +65,8 @@ Edit /bin/ghidra, edit last line in file to `fg` foreground mode :
         
 # Excersize_1, using a external .so library simple example
 
+Attachment : https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/releases/tag/1.0.0
+
         This excersize is demonstrating how to reverse engineer a DraftSight library and create a .h header for it.
         Luckely we had a full directory of API header files attached with the .deb archive. This was used as cheetsheet.
         
