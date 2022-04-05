@@ -1,3 +1,5 @@
+# NSA_Ghidra_HeaderFile_Reverse_Engeneering
+
 # Howto install Ghidra in Linux.
 
 Terminal commands:
@@ -23,7 +25,7 @@ Edit /bin/ghidra, edit last line in file to `fg` foreground mode :
      "${SCRIPT_DIR}"/support/launch.sh fg Ghidra "${MAXMEM}" "" ghidra.GhidraRun "$@"
                                        
 
-# NSA_Ghidra_HeaderFile_Reverse_Engeneering
+# Excersize_0
 HowTo reverse engineer a c++ header file
 
 The purpose of this material is to show how to reverse engeneer a .h header file in c/c++ if you don't have one.
@@ -61,19 +63,15 @@ The example is as follows :
         
         
         
-# Excersize_0 
-
-https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/releases/tag/1.0.0
+# Excersize_1
 
         This excersize is demonstrating how to reverse engineer a DraftSight library and create a .h header for it.
         Luckely we had a full directory of API header files attached with the .deb archive. This was used as cheetsheet.
         
         By using Ghidra we where able to create a new header file for the .so library.
         
-        In the qt gui app `HackMeExe` we included our new header file : 
-        
-https://github.com/grotius-cnc/NSA_Ghidra_HeaderFile_Reverse_Engeneering/blob/main/HackMeExe/dsLibrary.h
-        
+        In the qt gui app `HackMeExe` we included the new header file : 
+       
         The output in terminal :
 
         string 1 size:9
