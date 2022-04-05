@@ -20,7 +20,7 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
-LIBS+= -L/home/user/RE_Projects/Excersize_1/Qt -ldsLibrary
+LIBS+= -L/home/user/RE_Projects/Excersize_1/ -ldsLibrary
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
