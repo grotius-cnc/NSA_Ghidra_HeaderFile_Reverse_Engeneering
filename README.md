@@ -1,3 +1,26 @@
+# Howto install Ghidra in Linux.
+
+Terminal commands:
+
+        # Kali's repository key, look at : https://http.kali.org/kali/pool/main/k/kali-archive-keyring for new key's.
+        wget https://http.kali.org/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2022.1_all.deb 
+        dpkg -i kali-archive-keyring_2022.1_all.deb 
+        # A debugger:
+        apt-get install gdb 
+        # Kali repository :
+        echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list 
+        echo "deb-src http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list 
+        apt-get update 
+        # Ghidra :
+        apt-get install ghidra 
+        ./ghidra
+
+                                       
+Install a linux debugger gdb wich works alongside Ghidra.
+
+$ sudo apt-get install gdb
+
+
 # NSA_Ghidra_HeaderFile_Reverse_Engeneering
 HowTo reverse engineer a c++ header file
 
