@@ -13,7 +13,8 @@ Terminal commands:
         apt-get update 
         # Ghidra :
         apt-get install ghidra 
-        ./ghidra
+        # Run Ghidra :
+        ghidra
 
                                        
 Install a linux debugger gdb wich works alongside Ghidra.
