@@ -56,7 +56,9 @@ Edit /bin/ghidra, edit last line in file to `fg` foreground mode :
 4. App terminal output :        
 
         the string is : set the password
-      
+        
+![screen](https://user-images.githubusercontent.com/44880102/161773999-c363c9bb-b528-41ed-93c7-7e02efafc5c3.jpg)
+
 5. Conclusion :
 
         It is possible to make benefits off .so libaries when they are not shipped with header file.
