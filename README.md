@@ -28,13 +28,15 @@ Terminal commands:
         sudo apt-get update 
         # Ghidra :
         apt-get install ghidra 
-        # Run Ghidra :
-        ghidra
+     
         
 Edit /bin/ghidra, edit last line in file to `fg` foreground mode :
 
-     "${SCRIPT_DIR}"/support/launch.sh fg Ghidra "${MAXMEM}" "" ghidra.GhidraRun "$@"
-                                       
+        "${SCRIPT_DIR}"/support/launch.sh fg Ghidra "${MAXMEM}" "" ghidra.GhidraRun "$@"
+     
+Run Ghidra :
+
+        ghidra
 
 # Excersize_0, simple example.
 
