@@ -1,5 +1,16 @@
 # NSA_Ghidra_HeaderFile_Reverse_Engeneering
 
+HowTo reverse engineer a c or c++ header file.
+
+The purpose of this material is to show how to reverse engeneer a .h header file in c/c++ if you don't have one.
+This is a tiny concept of proof followed by a few examples.
+
+It can happen software is shipped only with the .so library file. To use the .so library file yourself, you 
+have to create a .h header file yourself if you want to interact with the library at programming level.
+
+This repository gives a insight how to access a `.so` library by creating your own header file.
+It is also possible to modify `elf` files in the same way with Ghidra.
+
 # Howto install Ghidra in Linux.
 
 Terminal commands:
@@ -25,18 +36,7 @@ Edit /bin/ghidra, edit last line in file to `fg` foreground mode :
      "${SCRIPT_DIR}"/support/launch.sh fg Ghidra "${MAXMEM}" "" ghidra.GhidraRun "$@"
                                        
 
-# Excersize_0
-HowTo reverse engineer a c++ header file
-
-The purpose of this material is to show how to reverse engeneer a .h header file in c/c++ if you don't have one.
-This is a tiny concept of proof.
-
-Most of the time commercial software is shipped only with the .so library file. To use the .so library file yourself, you 
-have to create a .h header file yourself.
-
-This repository gives a tiny example how to access .so library value's when the header file of the library is not provided, lost etc.
-
-The example is as follows :
+# Excersize_0, simple example.
 
 1. We have a tiny library called `libHackMe.so` wich was shipped with no .h header file.
 
@@ -63,7 +63,7 @@ The example is as follows :
         
         
         
-# Excersize_1
+# Excersize_1, using a external .so library simple example
 
         This excersize is demonstrating how to reverse engineer a DraftSight library and create a .h header for it.
         Luckely we had a full directory of API header files attached with the .deb archive. This was used as cheetsheet.
@@ -79,5 +79,5 @@ The example is as follows :
         String 1:0
         String 2:1 💯
         
-        
+# Excersize_2,  
         
