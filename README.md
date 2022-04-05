@@ -22,10 +22,6 @@ Edit /bin/ghidra, edit last line in file to `fg` foreground mode :
 
      "${SCRIPT_DIR}"/support/launch.sh fg Ghidra "${MAXMEM}" "" ghidra.GhidraRun "$@"
                                        
-Install a linux debugger gdb wich works alongside Ghidra.
-
-$ sudo apt-get install gdb
-
 
 # NSA_Ghidra_HeaderFile_Reverse_Engeneering
 HowTo reverse engineer a c++ header file
