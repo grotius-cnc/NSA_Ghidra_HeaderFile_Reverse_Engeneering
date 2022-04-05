@@ -3,7 +3,7 @@
 HowTo reverse engineer a c or c++ header file.
 
 The purpose of this material is to show how to reverse engeneer a .h header file in c/c++ if you don't have one.
-This is a tiny concept of proof followed by a few examples.
+This is a tiny proof of concept followed by a few examples.
 
 It can happen software is shipped only with the .so library file. To use the .so library file yourself, you 
 have to create a .h header file yourself if you want to interact with the library at programming level.
